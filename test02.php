@@ -26,9 +26,16 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-
-$sql = "SELECT * FROM news";
+//以下建立SQL查詢指令
+$sql = "SELECT * FROM news order by id desc";
+//以下執行SQL查詢指令，並把結果傳回給$result變數
 $result = $conn->query($sql);
+//以下建立一個用來輸入密碼的表單
+//使用者按下「登入」之後，即會前往chkpass.php檢查密碼
+echo "<form method=POST action=chkpass.php>";
+echo "張貼密碼：<input type=password name=password>";
+echo "<input type=submit value=登入>";
+echo "</form>";
 
 if ($result->num_rows > 0) { //檢查記錄的數量，看看是否有資料
   // output data of each row

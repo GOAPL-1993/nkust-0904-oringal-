@@ -15,7 +15,7 @@
         array("name"=>"高雄科大",  "link"=>"http://www.nkust.edu.tw")
     );
     echo "<form method=POST action=index.php>";
-    echo "<select name=target>";
+    echo "選單：<select name=target>";
     //一個迴圈把所有的<option></option>
     //都準備好 
     foreach($menudata as $item) {
@@ -24,7 +24,7 @@
             $item["name"] . "</option>";
     }
     echo "</select>";
-    echo "<input type=submit>";
+    echo "<input type=submit value=前往>";
     echo "</form>";
 ?>
 
