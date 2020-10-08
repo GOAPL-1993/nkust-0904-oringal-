@@ -7,13 +7,13 @@
         font-family:微軟正黑體;
     }
 </style>
-<title>何敏煌0903</title>
+<title>阿鈺0904</title>
 </head>
 <body>
-<h2>何敏煌0903 PHP練習記錄</h2>
+<h2>阿鈺0904 PHP練習記錄</h2>
 <hr>
-<?php include "menu.php"; ?>
+<?php include "includes/menu.php"; ?>
 <hr>
-<?php include "footer.php"; ?>
+<?php include "includes/footer.php"; ?>
 </body>
 </html>

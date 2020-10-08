@@ -7,12 +7,12 @@
         font-family:微軟正黑體;
     }
 </style>
-<title>何敏煌0903</title>
+<title>阿鈺0903</title>
 </head>
 <body>
 <h2>0903，PHP練習01：生日詢問表單</h2>
 <hr>
-<?php include "menu.php"; ?>
+<?php include "../includes/menu.php"; ?>
 <hr>
 <form method=POST action="response.php">
     民國
@@ -40,6 +40,6 @@
     <input type=submit>
 </form>
 <hr>
-<?php include "footer.php"; ?>
+<?php include "../includes/footer.php"; ?>
 </body>
 </html>
